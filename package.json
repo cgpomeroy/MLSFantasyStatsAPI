@@ -1,0 +1,20 @@
+{
+  "name": "mlsfantasystatsapi",
+  "version": "1.0.0",
+  "description": "MLS Stats and Projections for Fantasy Soccer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "Colton Pomeroy",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.12"
+  }
+}
