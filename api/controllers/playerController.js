@@ -7,7 +7,7 @@ exports.list_all_players = function(req, res) {
         if (err)
             res.send(err);
         res.json(player);
-    });
+    }).sort({lastName: 1});
 };
 
 

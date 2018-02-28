@@ -3,9 +3,13 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const PlayerSchema = new Schema({
-    name: {
+    firstName: {
         type: String,
-        required: "Please enter the player's name."
+        required: "Please enter the player's first name."
+    },
+    lastName: {
+        type: String,
+        required: "Please enter the player's last name."
     },
     created_date: {
         type: Date,
@@ -16,12 +20,7 @@ const PlayerSchema = new Schema({
         default: "Unknown"
     },
     dob: {
-        type: String,
-        default: "Unknown"
-    },
-    nationality: {
-        type: String,
-        default: "Unknown"
+        type: Date,
     },
     image: {
         type: String,
@@ -30,6 +29,27 @@ const PlayerSchema = new Schema({
     position: {
         type: String,
         default: "Unknown"
+    },
+    number: {
+        type: Number
+    },
+    realName: {
+        type: String
+    },
+    height: {
+        type: String
+    },
+    weight: {
+        type: Number
+    },
+    birthplace: {
+        type: String
+    },
+    social: {
+        type: String
+    },
+    designation: {
+        type: String
     }
 });
 
