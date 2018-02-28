@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 Player = require('./api/models/playerModel'); //created model loading here
 app = express();
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;

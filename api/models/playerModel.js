@@ -22,6 +22,14 @@ const PlayerSchema = new Schema({
     nationality: {
         type: String,
         default: "Unknown"
+    },
+    image: {
+        type: String,
+        default: "No Image"
+    },
+    position: {
+        type: String,
+        default: "Unknown"
     }
 });
 
